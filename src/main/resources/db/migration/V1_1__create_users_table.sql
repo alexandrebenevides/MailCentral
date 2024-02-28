@@ -3,6 +3,6 @@ CREATE TABLE IF NOT EXISTS users (
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(100) NOT NULL,
-    created_at DATETIME NULL,
-    updated_at DATETIME NULL
+    created_at DATETIME NOT NULL,
+    updated_at DATETIME NOT NULL
 );
