@@ -40,6 +40,10 @@ public class User {
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
     
+    public User() {
+        //
+    }
+    
     public User(String fullName, String email, String password) {
         this.fullName = fullName;
         this.email = email;
